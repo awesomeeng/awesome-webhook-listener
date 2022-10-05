@@ -1,0 +1,44 @@
+{
+  "name": "@awesomeeng/awesome-webhook-listener",
+  "version": "1.0.0",
+  "author": "the awesome engineering company",
+  "license": "MIT",
+  "contributors": [
+    "Glen R. Goodwin"
+  ],
+  "main": "./src/AwesomeWebhookListener.js",
+  "engines": {
+    "node": ">=10.5.0"
+  },
+  "dependencies": {
+    "eslint": "^8.24.0",
+    "jsdoc-to-markdown": "^7.1.1",
+    "mocha": "^10.0.0"
+  },
+  "scripts": {
+    "lint": "eslint src examples test",
+    "docs": "jsdoc2md src/** --separators > docs/API.md",
+    "test": "mocha test",
+    "tests": "mocha test",
+    "bench": "autocannon -c 100 -d 5 -p 10 http://localhost:7080/hello"
+  },
+  "description": "AwesomeWebhookListener is a simple way to set up a public Webhook endpoint that will log out any incoming webhook notifications.",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awesomeeng/awesome-webhook-listener.git"
+  },
+  "keywords": [
+    "awesome",
+    "awesomeeng",
+    "awesome",
+    "engineering"
+  ],
+  "bugs": {
+    "url": "https://github.com/awesomeeng/awesome-webhook-listener/issues"
+  },
+  "homepage": "https://github.com/awesomeeng/awesome-webhook-listener#readme"
+}
